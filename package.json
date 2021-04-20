@@ -1,5 +1,5 @@
 {
-  "name": "jobguy-crawler",
+  "name": "jobguy-scraper",
   "version": "1.0.0",
   "description": "Retrieve and archive data from jobguy.ir",
   "main": "index.js",
