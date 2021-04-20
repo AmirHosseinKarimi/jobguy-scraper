@@ -4,5 +4,8 @@
   "description": "Retrieve and archive data from jobguy.ir",
   "main": "index.js",
   "author": "Amir Hossein Karimi <amir.hz.karimi@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
 }
