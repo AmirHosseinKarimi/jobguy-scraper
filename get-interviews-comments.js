@@ -29,7 +29,7 @@ fs.readdir(interviewsDir, async (err, interviews) => {
 
       interviewComments = await response.json();
 
-      if (interviewComments.data) {
+      if (interviewComments.data.length) {
         fs.writeFileSync(
           interviewsCommentsDir + interviewId + ".json",
           JSON.stringify(interviewComments)
