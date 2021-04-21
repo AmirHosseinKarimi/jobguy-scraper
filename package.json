@@ -5,6 +5,11 @@
   "main": "index.js",
   "author": "Amir Hossein Karimi <amir.hz.karimi@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "rename-and-format": "node rename-and-format.js",
+    "get-reviews": "node get-reviews.js",
+    "get-interviews": "node get-interviews.js"
+  },
   "dependencies": {
     "node-fetch": "^2.6.1"
   }
