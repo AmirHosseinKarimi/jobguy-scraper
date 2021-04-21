@@ -8,7 +8,8 @@
   "scripts": {
     "rename-and-format": "node rename-and-format.js",
     "get-reviews": "node get-reviews.js",
-    "get-interviews": "node get-interviews.js"
+    "get-interviews": "node get-interviews.js",
+    "get-interviews-comments": "node get-interviews-comments.js"
   },
   "dependencies": {
     "node-fetch": "^2.6.1"
