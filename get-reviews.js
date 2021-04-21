@@ -40,5 +40,7 @@ fs.readdir("../jobguy/companies/", async (err, companies) => {
     }
   }
 
-  fs.writeFileSync(`reviews-errors.json`, JSON.stringify(errors));
+  if (errors) {
+    fs.writeFileSync(`reviews-errors.json`, JSON.stringify(errors));
+  }
 });
