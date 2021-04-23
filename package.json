@@ -9,7 +9,8 @@
     "rename-and-format": "node rename-and-format.js",
     "get-reviews": "node get-reviews.js",
     "get-interviews": "node get-interviews.js",
-    "get-interviews-comments": "node get-interviews-comments.js"
+    "get-interviews-comments": "node get-interviews-comments.js",
+    "get-questions": "node get-questions.js"
   },
   "dependencies": {
     "node-fetch": "^2.6.1"
