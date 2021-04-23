@@ -10,7 +10,9 @@ fs.readdir("../jobguy/companies/", async (err, companies) => {
 
     try {
       var response = await fetch(
-        `https://api.jobguy.ir/public/company/${companyName}/questions/?size=1000`
+        `https://api.jobguy.ir/public/company/${encodeURI(
+          companyName
+        )}/questions/?size=1000`
       );
 
       if (!response.ok) {
