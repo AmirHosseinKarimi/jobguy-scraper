@@ -1,6 +1,12 @@
 const fetch = require("node-fetch");
 const fs = require("fs");
 
+const interviewsDir = "../jobguy/interviews/";
+
+if (!fs.existsSync(interviewsDir)) {
+  fs.mkdirSync(interviewsDir);
+}
+
 fs.readdir("../jobguy/companies/", async (err, companies) => {
   var errors = [];
   var rawData, data, interviewJson;
@@ -29,7 +35,7 @@ fs.readdir("../jobguy/companies/", async (err, companies) => {
           interviewJson = await response.json();
 
           fs.writeFileSync(
-            `../jobguy/interviews/${interview.id}.json`,
+            `${interviewsDir}${interview.id}.json`,
             JSON.stringify(interviewJson)
           );
         } catch (error) {
