@@ -10,7 +10,8 @@
     "get-reviews": "node get-reviews.js",
     "get-interviews": "node get-interviews.js",
     "get-interviews-comments": "node get-interviews-comments.js",
-    "get-questions": "node get-questions.js"
+    "get-questions": "node get-questions.js",
+    "get-salary": "node get-salary.js"
   },
   "dependencies": {
     "node-fetch": "^2.6.1"
